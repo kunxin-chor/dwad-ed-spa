@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .relative {
+            position: relative;
+            top: 20px;
+            left: 50px;
+        }
+
+        /*
+        absolute position will take its reference from the FIRST positioned container (either relative or absolute)
+        if there is none, then it will take reference from the web site
+        */
+        .absolute {
+            position: absolute;
+            top: 100px;
+            left: 50px;
+        }
+        .rabbit {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+        }
+    </style>
+
+</head>
+<body>
+    <div style="height:250px;width:500px;border:1px solid black">
+        <p>The quick brown <span class='relative' style="background-color:orange">fox</span> jumps over the
+             lazy <span class="absolute" style="background-color:aquamarine">dog</span></p>
+    </div>
+    <div style="position:relative;height:250px;width:500px;border:1px solid black">
+       <span class="rabbit">Rabbit</span>
+    </div>
+</body>
+</html>

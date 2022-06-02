@@ -1,0 +1,33 @@
+.page {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    /* the padding and margin will be considered as part of the element's width and height */
+    transition: transform 1s;
+}
+
+#all-pages {
+    position: relative;
+}
+
+#page-1 {
+    background-color:aliceblue;
+}
+
+#page-2 {
+    background-color: antiquewhite;
+}
+
+#page-3 {
+    background-color: blanchedalmond;
+}
+
+.hidden {
+    /* translate the element to the left by 100% of it width */
+    transform: translateX(-100%)
+}
+
+.show {
+    transform: translateX(0);
+}
